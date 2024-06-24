@@ -6,6 +6,8 @@ Approach :
 - Here in this sample I have used containers as remote servers to mimic the actual scenario. All of there containers will have promtail scarping data { here log files /var/log/*log } to LOKI as a job named varlogs using this file : [promtail-config.yaml](https://github.com/OjasKhamkar/sessionai-assignment/blob/main/promtail-config.yaml)
 - Loki is a log aggregation system in Grafana that stores and queries logs from applications and infrastructure. The configuration for this is : [loki-config.yaml](https://github.com/OjasKhamkar/sessionai-assignment/blob/main/loki-config.yaml)
 - Finally I have hosted Grafana on my local ubuntu machine, To mimic a centralised VM which will be used for end to end workflow.
+- Created a dashboard using grafana UI and some log explore/ log filters using different queries
+- Defined alert rule and configured it to send a e-mail using local SMTP { in-secure } server which is to be configured in grafana config files at local-system.
 
 
 
