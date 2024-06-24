@@ -13,7 +13,12 @@ Approach :
 
 Below is my personalised dashboard that can be attained using [personalized-dashboard](https://github.com/OjasKhamkar/sessionai-assignment/blob/main/grafana-dashboard.json) 
 
-![ojas-sessionai-dashboard](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/de9f7463-392c-4ae1-a635-5d6d450d246b)
+![ojas-sessionai-dashboard](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/de9f7463-392c-4ae1-a635-5d6d450d246b) 
+
+Alerts : 
+
+![alerts](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/108eb104-a617-4308-8d1a-a252a4ccbf59)
+
 
 LOKI 's raw data aggregration :
 
