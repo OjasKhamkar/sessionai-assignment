@@ -1,0 +1,91 @@
+apiVersion: 1
+groups:
+    - orgId: 1
+      name: syslog-error-alert
+      folder: syslog-error-alert
+      interval: 1m
+      rules:
+        - uid: cdpr7fz4w2dc0f
+          title: system-error-alert
+          condition: B
+          data:
+            - refId: 1m-system-error
+              queryType: range
+              relativeTimeRange:
+                from: 1800
+                to: 0
+              datasourceUid: fdpqdb3htj7y8c
+              model:
+                datasource:
+                    type: loki
+                    uid: fdpqdb3htj7y8c
+                editorMode: builder
+                expr: count_over_time({job="varlogs"} |= `level=error` [1m])
+                intervalMs: 1000
+                key: Q-0215e387-7aef-47c7-8103-251f1e159605-0
+                maxDataPoints: 43200
+                queryType: range
+                refId: 1m-system-error
+                step: ""
+            - refId: A
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params: []
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - A
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: 1m-system-error
+                intervalMs: 1000
+                maxDataPoints: 43200
+                reducer: count
+                refId: A
+                type: reduce
+            - refId: B
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 0
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - B
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: 1m-system-error
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: B
+                type: threshold
+          dashboardUid: edpr5bo9xrg8wc
+          panelId: 3
+          noDataState: NoData
+          execErrState: Error
+          for: 1m
+          annotations:
+            __dashboardUid__: edpr5bo9xrg8wc
+            __panelId__: "3"
+          labels: {}
+          isPaused: false
+          notification_settings:
+            receiver: grafana-default-email
