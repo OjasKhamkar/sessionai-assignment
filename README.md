@@ -1,4 +1,5 @@
 # sessionai-assignment
+Simple-worklow implemented : ![flow](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/e42b0396-abb5-40db-a5c9-4168097b9774)
 
 Approach : 
 - To obatin continuos logs monitoring from remote servers to a centraliszed monitoriting-alerting-visualtion dashboard I have used GRAFANA <- lOKI <- PROMTAIL
@@ -14,3 +15,5 @@ Below is my personalised dashboard that can be attained using [personalized-dash
 
 LOKI 's raw data aggregration :
 ![loki](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/e5781e5a-c7bf-452d-967b-42b64b23007d)
+
+A 
