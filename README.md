@@ -16,6 +16,7 @@ Below is my personalised dashboard that can be attained using [personalized-dash
 ![ojas-sessionai-dashboard](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/de9f7463-392c-4ae1-a635-5d6d450d246b)
 
 LOKI 's raw data aggregration :
+
 ![loki](https://github.com/OjasKhamkar/sessionai-assignment/assets/58805468/e5781e5a-c7bf-452d-967b-42b64b23007d)
 
-A 
+Thanks for time and attention to my efforts !!
